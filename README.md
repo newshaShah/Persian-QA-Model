@@ -7,7 +7,9 @@
 **PQuAD** is a Persian Question Answering model fine-tuned on the **PQuAD Dataset**.
 The model is based on **[ParsBERT](https://github.com/hooshvare/parsbert)** and achieves state-of-the-art results in extractive QA tasks for the Persian language.
 
-This project utilizes the dataset introduced in the paper **"PQuAD: A Persian Question Answering Dataset"**.
+### 👩‍💻 About the Author & Dataset
+I, **Newsha Shahbodaghkhan**, was a **core contributor to the creation and development of the PQuAD dataset** during my BSc studies at **Amirkabir University of Technology**.
+This repository contains my implementation and fine-tuning of the model based on our dataset.
 
 🔗 **View Live Model:** [huggingface.co/newsha/PQuAD](https://huggingface.co/newsha/PQuAD)
 
@@ -54,16 +56,17 @@ print(f"Score: {result['score']:.4f}")
 
 ## 📄 Citation
 
-If you use this model or the PQuAD dataset in your research, please cite the original paper:
+If you use this model or the PQuAD dataset in your research, please cite our original paper:
 
 ```bibtex
-@article{PQuAD2023,
-  title = {PQuAD: A Persian Question Answering Dataset},
-  journal = {Computer Speech & Language},
-  volume = {81},
-  year = {2023},
-  doi = {10.1016/j.csl.2023.101505},
-  url = {https://www.sciencedirect.com/science/article/abs/pii/S0885230823000050}
+@article{darvishi2023pquad,
+  title={PQuAD: A Persian question answering dataset},
+  author={Darvishi, Kasra and Shahbodaghkhan, Newsha and Abbasiantaeb, Zahra and Momtazi, Saeedeh},
+  journal={Computer Speech \& Language},
+  volume={80},
+  pages={101486},
+  year={2023},
+  publisher={Elsevier}
 }
 ```
 
@@ -72,4 +75,4 @@ If you use this model or the PQuAD dataset in your research, please cite the ori
 - **Base Model:** ParsBERT by Hooshvare Lab
 
 ---
-*Maintained by Newsha*
+*Maintained by Newsha Shahbodaghkhan*
