@@ -1,23 +1,23 @@
-# PQuAD: Persian Question Answering Model 🇮🇷
+# PQuAD: Persian Question Answering Model 
 
 [![Hugging Face Model](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Model-yellow)](https://huggingface.co/newsha/PQuAD)
-[![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
+[![Paper](https://img.shields.io/badge/ScienceDirect-Read%20Paper-orange)](https://www.sciencedirect.com/science/article/abs/pii/S0885230823000050)
 [![License](https://img.shields.io/badge/License-MIT-green)](https://opensource.org/licenses/MIT)
 
-**PQuAD** is a state-of-the-art **Persian Question Answering (QA)** model.
-It is built by fine-tuning **[ParsBERT](https://github.com/hooshvare/parsbert)** (the leading Persian BERT model) on a proprietary QA dataset.
+**PQuAD** is a Persian Question Answering model fine-tuned on the **PQuAD Dataset**.
+The model is based on **[ParsBERT](https://github.com/hooshvare/parsbert)** and achieves state-of-the-art results in extractive QA tasks for the Persian language.
 
-This project was developed as part of a **BSc Thesis** at **Amirkabir University of Technology (Tehran Polytechnic)**.
+This project utilizes the dataset introduced in the paper **"PQuAD: A Persian Question Answering Dataset"**.
 
 🔗 **View Live Model:** [huggingface.co/newsha/PQuAD](https://huggingface.co/newsha/PQuAD)
 
 ---
 
 ## 🚀 Features
-- **Architecture:** BERT-based (ParsBERT v2.0)
-- **Task:** Extractive Question Answering (SQuAD style)
+- **Dataset:** Trained on PQuAD (Persian Question Answering Dataset)
+- **Base Architecture:** ParsBERT (v2.0)
+- **Task:** Extractive Question Answering
 - **Language:** Persian (Farsi)
-- **Framework:** PyTorch & Hugging Face Transformers
 
 ## 🛠 Installation
 
@@ -37,7 +37,7 @@ Copy the code below to run the model:
 ```python
 from transformers import pipeline
 
-# 1. Load the model (downloads automatically from Hugging Face)
+# 1. Load the model
 qa_pipeline = pipeline("question-answering", model="newsha/PQuAD")
 
 # 2. Define context and question
@@ -52,9 +52,24 @@ print(f"Score: {result['score']:.4f}")
 # Output: ۱۳۳۷
 ```
 
-## 🎓 Citation & Credits
-- **University:** Amirkabir University of Technology
-- **Base Model:** [ParsBERT](https://huggingface.co/hooshvare/parsbert-base-uncased) by Hooshvare Lab
+## 📄 Citation
+
+If you use this model or the PQuAD dataset in your research, please cite the original paper:
+
+```bibtex
+@article{PQuAD2023,
+  title = {PQuAD: A Persian Question Answering Dataset},
+  journal = {Computer Speech & Language},
+  volume = {81},
+  year = {2023},
+  doi = {10.1016/j.csl.2023.101505},
+  url = {https://www.sciencedirect.com/science/article/abs/pii/S0885230823000050}
+}
+```
+
+## 🎓 Credits
+- **University:** Amirkabir University of Technology (Tehran Polytechnic)
+- **Base Model:** ParsBERT by Hooshvare Lab
 
 ---
-*Created by Newsha*
+*Maintained by Newsha*
